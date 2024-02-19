@@ -11,12 +11,12 @@ This project focuses on developing a machine learning model to predict the likel
 5. **Prediction Job:** Scheduled job implemented with Airflow to periodically make predictions on ingested data.
 6. **Data Validation:** Utilizing Great Expectations for data validation (blood pressure, glucose, age).
 7. **Monitoring Dashboard:** Grafana dashboard to monitor data quality problems and model prediction issues, with two dashboards: 
-    i) XY-plot for Age vs Pregnancies 
+    i) XY-plot for Age vs Pregnancies \n
     ii) Bar gauge.
 
 ## Workflow
 ### User-end:
-i) Users access the web application to make on-demand predictions by filling in single-sample features or uploading a CSV file for multiple predictions. 
+i) Users access the web application to make on-demand predictions by filling in single-sample features or uploading a CSV file for multiple predictions.\n
 ii) The web application calls the model service API to retrieve predictions, displaying them along with corresponding features.
 
 ### Prediction-end:
