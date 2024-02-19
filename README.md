@@ -38,7 +38,7 @@ v) Predictions are stored in the database for access to the latest and historica
 
 ## Usage
 ### Prediction Webpage:
-Use the [streamlit - Diabetic predictor](webpage) to make predictions.
+Use the streamlit webpage  to make predictions.
 i) Fill in single-sample features using the provided form.
 ii) To make multiple predictions, upload a CSV file without labels and click "Predict" for on-demand predictions.
 
