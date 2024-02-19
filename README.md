@@ -16,15 +16,15 @@ This project focuses on developing a machine learning model to predict the likel
 
 ## Workflow
 ### User-end:
-i) Users access the web application to make on-demand predictions by filling in single-sample features or uploading a CSV file for multiple predictions.\n
+i) Users access the web application to make on-demand predictions by filling in single-sample features or uploading a CSV file for multiple predictions.  
 ii) The web application calls the model service API to retrieve predictions, displaying them along with corresponding features.
 
 ### Prediction-end:
-i) New data files are ingested and validated for quality using tools like Great Expectations. 
-ii) Clean data files are stored, while files with data quality issues are flagged and saved in the database. 
-iii) The prediction job, running every 5 minutes, checks for new clean data files. 
-iv) The prediction job reads clean data files and makes API calls to the model service for predictions. 
-v) Predictions are stored in the database for access to the latest and historical data.
+i) New data files are ingested and validated for quality using tools like Great Expectations.   
+ii) Clean data files are stored, while files with data quality issues are flagged and saved in the database.   
+iii) The prediction job, running every 5 minutes, checks for new clean data files.  
+iv) The prediction job reads clean data files and makes API calls to the model service for predictions.   
+v) Predictions are stored in the database for access to the latest and historical data.  
 
 ## Installation
 1. Install dependencies: `pip install -r requirements.txt`
@@ -38,20 +38,20 @@ v) Predictions are stored in the database for access to the latest and historica
 
 ## Usage
 ### Prediction Webpage:
-Use the streamlit webpage  to make predictions.
-i) Fill in single-sample features using the provided form.
+Use the streamlit webpage  to make predictions.  
+i) Fill in single-sample features using the provided form.  
 ii) To make multiple predictions, upload a CSV file without labels and click "Predict" for on-demand predictions.
 
 ### Past Predictions Webpage:
-View past predictions on this webpage.
-i) Select start and end dates.
-ii) Choose the prediction source from the drop-down list (webapp, scheduled predictions, or all).
+View past predictions on this webpage.  
+i) Select start and end dates.  
+ii) Choose the prediction source from the drop-down list (webapp, scheduled predictions, or all).  
 iii) View past predictions with corresponding features.
 
 ## Visualization
 Utilize Grafana for Data Quality Monitoring, Model Performance Monitoring, Data Drift Detection, Dashboard Customization, Alerting, and Notifications.
 
 ## API Endpoints
-The model service (API) exposes the following endpoints:
-i) POST /predict: Make model predictions by providing necessary input features.
-ii) GET /past-predictions: Retrieve past predictions along with used features.
+The model service (API) exposes the following endpoints:  
+i) POST /predict: Make model predictions by providing necessary input features.  
+ii) GET /past-predictions: Retrieve past predictions along with used features.  
